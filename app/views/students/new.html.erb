@@ -1,0 +1,21 @@
+<h1>Create New User</h1>
+<%= form_with model: @students do |form| %>
+<div>
+    <%=form.label :first_name%>
+    <%= form.text_field :first_name %>
+    </div>
+    <div>
+    <%=form.label :last_name%>
+    <%= form.text_field :last_name %>
+    </div>
+     <div>
+    <%=form.label :email%>
+    <%= form.email_field :emial %>
+    </div>
+     <div>
+    <%=form.lable :password %>
+    <%=form.password_field :password %>
+    </div>
+
+    <%= form.submit %>
+    <% end %>
